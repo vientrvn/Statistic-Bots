@@ -170,7 +170,6 @@ int main(int argc, char **argv)
     if (strcmp(arr_buf[2], "BYE\n") == 0)
       break;
 
-
     for (int i = 3; i < 8; i++)
     {
       nums[i - 3] = atoi(arr_buf[i]);
