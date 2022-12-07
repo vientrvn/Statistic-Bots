@@ -160,19 +160,20 @@ int main(int argc, char **argv)
     char arr_buf[8][MAXLINE];
 
     int i = 0;
-    while (parsed_buf != NULL) {
+    while (parsed_buf != NULL)
+    {
       strcpy(arr_buf[i], parsed_buf);
       i++;
       parsed_buf = strtok(NULL, " ");
     }
-    
-    if (strcmp(arr_buf[2], "BYE\n") == 0) {
+
+    if (strcmp(arr_buf[2], "BYE\n") == 0)
       break;
-    }
+
 
     for (int i = 3; i < 8; i++)
     {
-      nums[i-3] = atoi(arr_buf[i]);
+      nums[i - 3] = atoi(arr_buf[i]);
     }
 
     // Sort the numbers by using insertion sort
